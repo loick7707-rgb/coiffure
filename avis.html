@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avis — Maison Élégance</title>
+  <meta name="description" content="Avis clients du salon (exemples) avec microdonnées schema.org Review.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Maison Élégance — retour à l’accueil">
+      <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+      <span class="brand-text">Maison Élégance</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navigation principale" data-site-nav>
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-cta" aria-label="Actions rapides">
+      <a class="btn btn-secondary" href="tel:+33123456789">📞 Appeler</a>
+      <a class="btn btn-primary" href="contact.html">Prendre RDV</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenu" class="container" tabindex="-1">
+  <header class="page-header">
+    <p class="page-kicker">Avis</p>
+    <h1>Avis clients</h1>
+    <p class="lead">
+      Exemple avec microdonnées schema.org (Review / Rating) pour un salon de coiffure.
+      Remplace les avis par de vrais témoignages (si tu en as l’autorisation).
+    </p>
+  </header>
+
+  <!-- Microdonnées globales (HairSalon) -->
+  <section class="card" itemscope itemtype="https://schema.org/HairSalon" aria-label="Données du salon (microdonnées)">
+    <h2 itemprop="name">Maison Élégance</h2>
+
+    <p class="small">
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="streetAddress">12 Rue Exemple</span>,
+        <span itemprop="postalCode">75000</span>
+        <span itemprop="addressLocality">Paris</span>
+      </span>
+      • <span itemprop="telephone">+33 1 23 45 67 89</span>
+    </p>
+
+    <!-- AggregateRating (exemple) -->
+    <div class="card" style="box-shadow:none;" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" aria-label="Note moyenne">
+      <h3>Note moyenne</h3>
+      <p class="small">
+        <strong><span itemprop="ratingValue">4.9</span>/5</strong> —
+        <span itemprop="reviewCount">37</span> avis
+      </p>
+    </div>
+
+    <h3>Derniers avis</h3>
+
+    <div class="grid grid-2" style="margin-top:12px;">
+      <!-- Review 1 -->
+      <article class="card" style="box-shadow:none;" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <h4 itemprop="name">“Super accueil et vraie écoute”</h4>
+        <p class="small">
+          <span>Par <span itemprop="author">Camille</span></span>
+          • <time itemprop="datePublished" datetime="2025-11-08">8 novembre 2025</time>
+        </p>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note">
+          <meta itemprop="worstRating" content="1">
+          <meta itemprop="bestRating" content="5">
+          <p class="small"><strong><span itemprop="ratingValue">5</span>/5</strong></p>
+        </div>
+
+        <p itemprop="reviewBody">
+          Diagnostic rapide, coupe très propre, finitions impeccables. Je recommande.
+        </p>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="card" style="box-shadow:none;" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <h4 itemprop="name">“Balayage naturel”</h4>
+        <p class="small">
+          <span>Par <span itemprop="author">Nadia</span></span>
+          • <time itemprop="datePublished" datetime="2025-10-22">22 octobre 2025</time>
+        </p>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note">
+          <meta itemprop="worstRating" content="1">
+          <meta itemprop="bestRating" content="5">
+          <p class="small"><strong><span itemprop="ratingValue">5</span>/5</strong></p>
+        </div>
+
+        <p itemprop="reviewBody">
+          Résultat lumineux et naturel, pas de démarcation. Très satisfaite.
+        </p>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="card" style="box-shadow:none;" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <h4 itemprop="name">“Rapide et soigné”</h4>
+        <p class="small">
+          <span>Par <span itemprop="author">Thomas</span></span>
+          • <time itemprop="datePublished" datetime="2025-09-30">30 septembre 2025</time>
+        </p>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note">
+          <meta itemprop="worstRating" content="1">
+          <meta itemprop="bestRating" content="5">
+          <p class="small"><strong><span itemprop="ratingValue">4</span>/5</strong></p>
+        </div>
+
+        <p itemprop="reviewBody">
+          Dégradé propre et conseils d’entretien. Je reviendrai.
+        </p>
+      </article>
+
+      <!-- Review 4 -->
+      <article class="card" style="box-shadow:none;" itemprop="review" itemscope itemtype="https://schema.org/Review">
+        <h4 itemprop="name">“Soin réparateur efficace”</h4>
+        <p class="small">
+          <span>Par <span itemprop="author">Élise</span></span>
+          • <time itemprop="datePublished" datetime="2025-08-14">14 août 2025</time>
+        </p>
+
+        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" aria-label="Note">
+          <meta itemprop="worstRating" content="1">
+          <meta itemprop="bestRating" content="5">
+          <p class="small"><strong><span itemprop="ratingValue">5</span>/5</strong></p>
+        </div>
+
+        <p itemprop="reviewBody">
+          Cheveux plus doux et brillants dès la première séance. Top.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" aria-label="Note sur les avis">
+    <h2>Important</h2>
+    <p class="lead">
+      Pour rester crédible, n’invente pas d’avis : ajoute uniquement des avis réels (et autorisés),
+      et ajuste la note moyenne et le nombre d’avis en conséquence.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a class="brand" href="index.html" aria-label="Retour à l’accueil">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+        <strong>Maison Élégance</strong>
+      </a>
+      <p class="small">
+        Salon de coiffure (démo) — coupes, couleurs, soins. <br>
+        12 Rue Exemple, 75000 Paris • +33 1 23 45 67 89
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <strong>Navigation</strong>
+      <nav class="site-nav" aria-label="Liens de bas de page" data-site-nav style="margin-top:8px;">
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-col">
+      <strong>Horaires</strong>
+      <p class="small" style="margin-top:8px;">
+        Lun–Ven : 09:00–19:00<br>
+        Sam : 09:00–18:00<br>
+        Dim : fermé
+      </p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    © <span id="year"></span> Maison Élégance — Tous droits réservés.
+  </div>
+
+  <script src="script.js"></script>
+</footer>
+</body>
+</html>
