@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Maison Élégance</title>
+  <meta name="description" content="Contact et prise de rendez-vous : formulaire (démo) et coordonnées.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Maison Élégance — retour à l’accueil">
+      <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+      <span class="brand-text">Maison Élégance</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navigation principale" data-site-nav>
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-cta" aria-label="Actions rapides">
+      <a class="btn btn-secondary" href="tel:+33123456789">📞 Appeler</a>
+      <a class="btn btn-primary" href="contact.html">Prendre RDV</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenu" class="container" tabindex="-1">
+  <header class="page-header">
+    <p class="page-kicker">Contact</p>
+    <h1>Prendre rendez‑vous</h1>
+    <p class="lead">
+      Formulaire front‑end (démo) : il valide les champs et affiche une confirmation.
+      Pour un envoi réel (e‑mail / base de données), il faut un backend.
+    </p>
+  </header>
+
+  <section class="grid grid-2" aria-label="Contact et formulaire">
+    <article class="card">
+      <h2>Coordonnées</h2>
+      <address class="small" style="font-style: normal;">
+        Maison Élégance<br>
+        12 Rue Exemple, 75000 Paris<br>
+        Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a><br>
+        E‑mail : <a href="mailto:contact@maison-elegance.exemple">contact@maison-elegance.exemple</a>
+      </address>
+
+      <p class="help" style="margin-top:12px;">
+        Astuce : ajoute un lien de réservation en ligne (Planity/Calendly) si tu veux une vraie prise de RDV.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Formulaire</h2>
+
+      <p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="help">Ex. “Marie Dupont”.</p>
+        </div>
+
+        <div class="field">
+          <label for="email">E‑mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required
+                 placeholder="06 00 00 00 00">
+        </div>
+
+        <div class="field">
+          <label for="service">Prestation</label>
+          <select id="service" name="service" required>
+            <option value="">Choisir…</option>
+            <option>Coupe + Brushing</option>
+            <option>Coloration racines</option>
+            <option>Balayage / mèches</option>
+            <option>Coupe homme</option>
+            <option>Soin réparateur</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required
+            placeholder="Décris ta demande : longueur, objectif, date souhaitée, etc."></textarea>
+        </div>
+
+        <div class="field">
+          <label>
+            <input id="consent" name="consent" type="checkbox" required>
+            J’accepte d’être recontacté·e concernant ma demande.
+          </label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+        <p class="help">Démo : aucune donnée n’est envoyée à un serveur.</p>
+      </form>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a class="brand" href="index.html" aria-label="Retour à l’accueil">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+        <strong>Maison Élégance</strong>
+      </a>
+      <p class="small">
+        Salon de coiffure (démo) — coupes, couleurs, soins. <br>
+        12 Rue Exemple, 75000 Paris • +33 1 23 45 67 89
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <strong>Navigation</strong>
+      <nav class="site-nav" aria-label="Liens de bas de page" data-site-nav style="margin-top:8px;">
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-col">
+      <strong>Horaires</strong>
+      <p class="small" style="margin-top:8px;">
+        Lun–Ven : 09:00–19:00<br>
+        Sam : 09:00–18:00<br>
+        Dim : fermé
+      </p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    © <span id="year"></span> Maison Élégance — Tous droits réservés.
+  </div>
+
+  <script src="script.js"></script>
+</footer>
+</body>
+</html>
