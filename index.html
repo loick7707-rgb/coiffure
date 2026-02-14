@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Élégance — Salon de coiffure</title>
+  <meta name="description" content="Salon de coiffure : coupes, couleurs, soins. Site multi-pages (exemple) avec contact, galerie et avis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Maison Élégance — retour à l’accueil">
+      <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+      <span class="brand-text">Maison Élégance</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navigation principale" data-site-nav>
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-cta" aria-label="Actions rapides">
+      <a class="btn btn-secondary" href="tel:+33123456789">📞 Appeler</a>
+      <a class="btn btn-primary" href="contact.html">Prendre RDV</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenu" class="container" tabindex="-1">
+  <header class="page-header">
+    <p class="page-kicker">Salon de coiffure • Femme • Homme • Enfant</p>
+    <h1>Un salon clair, moderne et professionnel — multi‑pages.</h1>
+    <p class="lead">
+      Exemple prêt à l’emploi : navigation cohérente, design responsive, galerie, prestations détaillées,
+      avis avec microdonnées, formulaire front‑end avec validation.
+    </p>
+  </header>
+
+  <section class="grid grid-2" aria-label="Points forts">
+    <article class="card">
+      <h2>Prestations</h2>
+      <p>
+        Coupes, couleurs, balayage, brushing, soins : une grille détaillée avec prix indicatifs et durées.
+      </p>
+      <p><a class="btn btn-primary" href="prestations.html">Voir les prestations</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Prendre rendez‑vous</h2>
+      <p>
+        Page dédiée avec formulaire (validation JavaScript) + message de confirmation (démo).
+      </p>
+      <p><a class="btn btn-secondary" href="contact.html">Accéder au contact</a></p>
+    </article>
+  </section>
+
+  <section class="grid grid-3" aria-label="Engagements du salon" style="margin-top:16px;">
+    <article class="card">
+      <span class="badge">✓ Diagnostic</span>
+      <h3 style="margin-top:12px;">Conseils personnalisés</h3>
+      <p>Selon la forme du visage, la nature du cheveu et l’entretien souhaité.</p>
+    </article>
+
+    <article class="card">
+      <span class="badge">✓ Qualité</span>
+      <h3 style="margin-top:12px;">Finitions soignées</h3>
+      <p>Coiffage, contrôle de symétrie, et astuces d’entretien pour durer.</p>
+    </article>
+
+    <article class="card">
+      <span class="badge">✓ Confort</span>
+      <h3 style="margin-top:12px;">Accueil & hygiène</h3>
+      <p>Matériel propre, environnement lumineux, rythme respectueux du client.</p>
+    </article>
+  </section>
+
+  <section class="grid grid-2" aria-label="Aperçu galerie et avis" style="margin-top:16px;">
+    <article class="card">
+      <h2>Galerie</h2>
+      <p>Grille responsive d’images (placeholders inclus).</p>
+      <p><a class="btn" href="galerie.html">Voir la galerie</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Avis</h2>
+      <p>Exemples d’avis clients avec microdonnées schema.org.</p>
+      <p><a class="btn" href="avis.html">Lire les avis</a></p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a class="brand" href="index.html" aria-label="Retour à l’accueil">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+        <strong>Maison Élégance</strong>
+      </a>
+      <p class="small">
+        Salon de coiffure (démo) — coupes, couleurs, soins. <br>
+        12 Rue Exemple, 75000 Paris • +33 1 23 45 67 89
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <strong>Navigation</strong>
+      <nav class="site-nav" aria-label="Liens de bas de page" data-site-nav style="margin-top:8px;">
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-col">
+      <strong>Horaires</strong>
+      <p class="small" style="margin-top:8px;">
+        Lun–Ven : 09:00–19:00<br>
+        Sam : 09:00–18:00<br>
+        Dim : fermé
+      </p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    © <span id="year"></span> Maison Élégance — Tous droits réservés.
+  </div>
+
+  <script src="script.js"></script>
+</footer>
+</body>
+</html>
